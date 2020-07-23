@@ -24,7 +24,7 @@ print('SPY pull program now initiating....')
 
 wsh = win32com.client.Dispatch("WScript.Shell")
     
-# Creates new folder titled today's date in YahooFinance Excel folder (Market Research)
+# Creates new folder titled today's date in desired folder path
 ExcelFolder = 'FILE LOCATION HERE' \
     + datetime.datetime.today().strftime('%Y-%m-%d')
 
@@ -62,8 +62,7 @@ for i in range(int(1)):
         # Stock.to_csv(ticker + '.csv', sep=' ', encoding='utf-8')  <-- Syntax to create CSV file
         DownloadedExcel.append(ticker)
     
-    # Runs macro in Excel to format CSV data (Text to Columns, adjust 
-    #     column width, and adds 'Unique ID' in cell A1) 
+    # Runs macro in Excel to format CSV data (Text to Columns, adjust column width, and adds 'Unique ID' in cell A1) 
         if os.path.exists('FILE LOCATION HERE' \
                           + datetime.datetime.today().strftime('%Y-%m-%d') + '\\' \
                           + datetime.datetime.today().strftime('%Y-%m-%d') + ' ' + ticker + '.xlsx'):
