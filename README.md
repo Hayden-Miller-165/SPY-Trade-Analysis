@@ -1,5 +1,5 @@
-# SPY-Trade-Analysis
-Program utilizes pandas DataReader to pull SPY data from Yahoo Finance and creates an excel file including the analysis needed for short term volatility trading.
+# Stock-Trade-Analysis
+Program utilizes pandas DataReader to pull stock data from Yahoo Finance and creates an excel file including the analysis needed for short term volatility trading or other desired strategies.
 
 Packages needed for program: pandas_datareader, datetime, os, win32com.client
 
