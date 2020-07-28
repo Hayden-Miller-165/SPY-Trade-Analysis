@@ -55,7 +55,7 @@ for i in range(int(1)):
 
     # Utilizes input criteria to pull Stock's Yahoo Finance data
     try:
-        Stock = web.DataReader('AAPL', 'yahoo', start, end)
+        Stock = web.DataReader(ticker, 'yahoo', start, end)
         Stock.reset_index(inplace=True,drop=False)
         # Creates Excel if no exceptions are raised
         Stock.to_excel(datetime.datetime.today().strftime('%Y-%m-%d') + ' ' + ticker + '.xlsx')
