@@ -1,9 +1,8 @@
 #! python3
 """
-Created on Sat Jan 12 18:21:55 2019
 
 Program utilizes pandas DataReader to pull requested stock(s) from Yahoo Finance
-with a provided date range.  Creates an excel file of the data
+with a provided date range.  Creates excel file of the data
 
 @author: HM
 """
